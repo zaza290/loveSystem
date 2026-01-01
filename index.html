@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Eternal Love Memory</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Dancing+Script:wght@400;700&family=Great+Vibes&family=Parisienne&display=swap" rel="stylesheet">
+</head>
+<body>
+    <audio id="bgMusic" src="https://www.bensound.com/bensound-music/bensound-tenderness.mp3" loop autoplay muted></audio>
+    
+    <div id="floating-elements"></div>
+
+    <!-- Decorative side hearts -->
+    <div class="side-heart left-heart">
+        <img src="https://image2url.com/r2/default/images/1767262940929-81251d89-73cd-4f0f-aa1b-f9242a7a5a92.jfif" alt="Romantic couple">
+    </div>
+    <div class="side-heart right-heart">
+        <img src="https://image2url.com/r2/default/images/1767263164172-43b6f7de-8918-4c8d-8424-eb4ab19dc320.jfif" alt="Lovers embrace">
+    </div>
+
+    <div class="container">
+        <div class="header-heart-cluster">
+            <div class="profile profile1 pulse-heart">
+                <img src="https://image2url.com/r2/default/images/1767263259781-f666556d-94c4-4696-8c4a-d0bf30193746.jfif" alt="You">
+            </div>
+            <div class="big-heart glow-heart"></div>
+            <div class="profile profile2 pulse-heart">
+                <img src="https://image2url.com/r2/default/images/1767262940929-81251d89-73cd-4f0f-aa1b-f9242a7a5a92.jfif" alt="My Love">
+            </div>
+        </div>
+
+        <h1 class="title-glow">Para sa imo ni bii</h1>
+        <p class="intro">Forever begins with you... 💞</p>
+        <div id="countdown" class="countdown">Days until our next chapter...</div>
+
+        <button id="musicToggle" class="music-btn">Play Our Melody ♫</button>
+
+        <div class="tabs">
+            <button class="tab-button active" data-tab="memories">Love Notes</button>
+            <button class="tab-button" data-tab="reasons">Why I Adore You</button>
+            <button class="tab-button" data-tab="journey">Our Journey</button>
+            <button class="tab-button" data-tab="letter">My Heart's Letter</button>
+        </div>
+
+        <!-- Memories Tab -->
+        <div id="memories" class="tab-content active">
+            <h2>Our Secret Treasures</h2>
+            <p>Tap the gift to receive a whisper from my heart</p>
+            
+            <div class="gift-box glow-box" id="giftBox">
+                <div class="gift-lid"></div>
+                <div class="ribbon"></div>
+            </div>
+            
+            <div id="surpriseMessage" class="surprise-message"></div>
+            <button id="resetButton" class="reset-btn">Another Whisper?</button>
+
+            <form id="customForm" class="memory-form">
+                <textarea id="customMessage" placeholder="Write a memory only we share..." required></textarea>
+                <button type="submit">Seal in Our Heart</button>
+            </form>
+
+            <div class="memories-list">
+                <h3>Moments We Cherish</h3>
+                <ul id="memoryList"></ul>
+            </div>
+        </div>
+
+        <!-- Reasons Tab -->
+        <div id="reasons" class="tab-content">
+            <h2>Reasons You Own My Heart</h2>
+            <div class="reasons-grid">
+                <div class="flip-card glow-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">1</div>
+                        <div class="flip-card-back">They say distance is hard, and they are right. But knowing that I have you waiting at the end of this makes every lonely second worth it. You are worth every single mile between us</div>
+                    </div>
+                </div>
+                <div class="flip-card glow-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">2</div>
+                        <div class="flip-card-back">I hate that I can’t reach out and hold you right now, but I love knowing that we are looking at the same moon. No matter how far apart we are, you are always right here in my heart</div>
+                    </div>
+                </div>
+                <div class="flip-card glow-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">3</div>
+                        <div class="flip-card-back">Even though you aren't physically here, you are the first thing on my mind when I wake up and the last thing I think about before I sleep. Distance separates our bodies, but it can never separate us</div>
+                    </div>
+                </div>
+                <div class="flip-card glow-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">4</div>
+                        <div class="flip-card-back">Every day that passes is a victory because it means we are one day closer to closing this distance. I am counting down the seconds until I can finally look into your eyes instead of a screen</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Journey Tab -->
+        <div id="journey" class="tab-content">
+            <h2>Our Beautiful Journey</h2>
+            <ul class="timeline">
+                <li>
+                    <div class="timeline-content left glow-timeline">
+                        <h3>First Virtual Date</h3>
+                        <span class="date">March 2022</span>
+                        <p>Miles apart, but seeing your smile on screen made the distance disappear.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-content right glow-timeline">
+                        <h3>Endless Calls</h3>
+                        <span class="date">January 2024</span>
+                        <p>When your voice became my favorite sound to fall asleep to.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-content left glow-timeline">
+                        <h3>The Countdown</h3>
+                        <span class="date">kailan gani ka mag anhi bii?</span>
+                        <p>Crossing off the days until the miles between us finally hit zero.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Letter Tab -->
+        <div id="letter" class="tab-content">
+            <h2>My Soul's Letter to You</h2>
+            <div class="envelope-container">
+                <div class="envelope glow-envelope" id="envelope">
+                    <div class="envelope-front"></div>
+                    <div class="envelope-back">
+                        <div class="letter-content">
+                            <p>My Dearest Nori,</p>
+                            <p>I was sitting here thinking about us, and I just needed to tell you how incredibly much you mean to me. I know that loving across a distance isn't easy. There are days when the miles feel longer than others, and I would give anything just to reach out and hold your hand for a single minute.
+
+But then I remember why I’m doing this. I remember your laugh, your kindness, and the way you make me feel even when you are thousands of miles away. You are worth every lonely night, every glitchy video call, and every second of waiting.
+
+We are building a beautiful journey together, and I know that one day, the distance will just be a memory we talk about. Until then, please remember that you are always in my heart, no matter where I am.</p>
+                            <p>Yours in this life and every life after,<br><strong>Yours, always, Wilmer</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
